@@ -1,0 +1,33 @@
+@import '../../../assets/scss/custom_variables';
+.search_form {
+  position: relative;
+  margin-top: rem-calc(10);
+  @include media-breakpoint-up(md) {
+    margin-top: rem-calc(10);
+  }
+}
+.input_text {
+  border-radius: 3px !important;
+}
+.button_search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: rem-calc(40);
+  background: $brand_color;
+  color: $white;
+  border: 0;
+  padding: 10px 0 0;
+  line-height: rem-calc(40);
+  border-radius: 0 3px 3px 0;
+  svg {
+    vertical-align: top;
+  }
+  &:focus,
+  &:hover {
+    background: $brand_color;
+  }
+}
+
+

@@ -1,0 +1,167 @@
+$rem-base: 16px;
+
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+@function convert-to-rem($value, $base-value: $rem-base)  {
+    $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+    @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+    @return $value;
+}
+
+@function rem-calc($values, $base-value: $rem-base) {
+    $max: length($values);
+    @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+    $remValues: ();
+    @for $i from 1 through $max {
+        $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+    }
+    @return $remValues;
+}
+@mixin inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+@mixin verticalGradient($top,$bottom){
+    background: $top;
+    background: -moz-linear-gradient(top, $top 0%,$bottom 100%);
+    background: -webkit-linear-gradient(top, $top 0%,$bottom 100%);
+    background: linear-gradient(to bottom, $top 0%,$bottom 100%);
+}
+@mixin horizontalGradient($left,$right){
+    background: $left;
+    background: -moz-linear-gradient(left, $left 0%,$right 100%);
+    background: -webkit-linear-gradient(left, $left 0%,$right 100%);
+    background: linear-gradient(to right, $left 0%,$right 100%);
+}
+@mixin horizontalGradientCener($left,$center,$right){
+    background: $left;
+    background: -moz-linear-gradient(left, $left 0%,$center 30%,$right 100%);
+    background: -webkit-linear-gradient(left, $left 0%,$center 30%,$right 100%);
+    background: linear-gradient(to right, $left 0%,$center 30%,$right 100%);
+}
+@mixin verticalGradientCener($top,$center,$bottom){
+    background: $top;
+    background: -moz-linear-gradient($top, $top 0%,$center 50%,$bottom 100%);
+    background: -webkit-linear-gradient($top, $top 0%,$center 50%,$bottom 100%);
+    background: linear-gradient(to bottom, $top 0%,$center 50%,$bottom 100%);
+}
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+    $n: index($breakpoint-names, $name);
+    @return if($n != null and $n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+    $next: breakpoint-next($name, $breakpoints);
+    @return if($next, breakpoint-min($next, $breakpoints) - .02, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+    $min: breakpoint-min($name, $breakpoints);
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+    $max: breakpoint-max($name, $breakpoints);
+    @if $max {
+        @media (max-width: $max) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-between($lower, $upper, $breakpoints: $grid-breakpoints) {
+    $min: breakpoint-min($lower, $breakpoints);
+    $max: breakpoint-max($upper, $breakpoints);
+
+    @if $min != null and $max != null {
+        @media (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+    } @else if $max == null {
+        @include media-breakpoint-up($lower, $breakpoints) {
+            @content;
+        }
+    } @else if $min == null {
+        @include media-breakpoint-down($upper, $breakpoints) {
+            @content;
+        }
+    }
+}
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 480px,
+        md: 640px,
+        lg: 992px,
+        xl: 1300px
+);
+$grid-gutter-width: 20px;
+
+$white: #fff;
+$black: #000;
+$light-white: #e9ecef;
+$secondary_color: #404040;
+$dark_secondary_color: #323232;
+$brand_color: #baa063;
+$dark_brand_color: #c19311;
+$link-color: $brand_color;
+$body-color: #777;
+$head-color: #272727;
+$red: #dc3545;
+$dark-white: #F6F6F0;
+$dark-success-color: #A2B8A4;
+$footer-color: #bdbdbd;
+$footer-color-hover: #ceb478;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+$font-family-sans-serif: 'Lato', sans-serif;
+$form-group-margin-bottom: 0;
+$border-radius: 2px;
+$input-box-shadow: none;
+$input-border-color: #ccc;
+$input-border-width: 1px;
+$input-focus-border-color: $brand_color;
+$input-focus-box-shadow: none;
+$input-font-size: .875rem;
+$input-height: rem-calc(40);
+$dropdown-padding-y: 0;
+$dropdown-font-size: rem-calc(14);
+$dropdown-border-color: transparent;
+$dropdown-link-hover-bg: none;
+$dropdown-link-hover-color: $brand_color;
+$dropdown-item-padding-y: 0.5rem;
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
+$navbar-dark-active-color: $white;
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 2rem;
+$input-btn-font-size: 1rem;
+$headings-color: $head-color;
+$headings-color: $brand_color;
+$breadcrumb-divider: quote("|");
+$breadcrumb-padding-y: .5rem;
+$breadcrumb-bg: $dark-white;
+$breadcrumb-font-size: rem-calc(14);
+

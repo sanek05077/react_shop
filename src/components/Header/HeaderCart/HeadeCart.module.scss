@@ -1,0 +1,124 @@
+@import '../../../assets/scss/custom_variables';
+.basket {
+  display: flex;
+  position: relative;
+  align-items: top;
+  cursor: pointer;
+  justify-content: flex-end;
+  height: 100%;
+  @include media-breakpoint-up(md) {
+    align-items: center;
+  }
+}
+.basket_icon {
+  position: relative;
+  color: $brand_color;
+  font-size: rem-calc(25);
+  svg {
+    fill: $brand_color;
+    width: 1em;
+    height: 1em;
+  }
+}
+.count {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  font-size: rem-calc(12);
+  color: $white;
+  background: $red;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $white;
+  line-height: 15px;
+  border-radius: 50%;
+  text-align: center;
+}
+.basket_block {
+  background: $white;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 80%;
+  text-align: left;
+  padding: .625rem;
+  box-shadow:  0 .5rem 1rem rgba($black, .15);
+  margin-top: rem-calc(9);
+  font-size: .875rem;
+  transition: all .2s ease-in-out;
+  min-width: 300px;
+  display: none;
+  @include media-breakpoint-up(sm) {
+    width: 500px;
+    padding: 1rem 1.5rem;
+  }
+}
+.basket_text {
+  font-size: .75rem;
+  color: $white;
+  font-weight: 600;
+  @include inline-block();
+  margin: 0 0 0 rem-calc(15);
+}
+.list_products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 1rem;
+    margin: 0 0 1rem;
+    border-bottom: 1px solid $body-color;
+  }
+}
+.image_product {
+  width: 20%;
+}
+.product_name {
+  width: 50%;
+  font-size: .75rem;
+  @include media-breakpoint-up(sm) {
+    font-size: .875rem;
+  }
+}
+.product_price {
+  width: 20%;
+  font-size: rem-calc(14);
+  font-weight: 600;
+  @include media-breakpoint-up(sm) {
+    font-size: rem-calc(18);
+  }
+}
+.remove {
+  font-size: rem-calc(16);
+  color: $black;
+  cursor: pointer;
+  svg {
+    fill: $black
+  }
+}
+.total_block {
+  text-align: right;
+  font-size: rem-calc(18);
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 0 0 1rem;
+  span {
+    @include inline-block();
+  }
+  strong {
+    font-size: rem-calc(25);
+    @include inline-block();
+    margin: 0 0 0 rem-calc(10);
+  }
+}
+.basket_btn {
+  .btn {
+    width: 100%;
+    font-size: rem-calc(18);
+    font-weight: 600;
+  }
+}
+

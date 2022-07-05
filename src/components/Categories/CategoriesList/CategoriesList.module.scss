@@ -1,0 +1,34 @@
+@import '../../../assets/scss/custom_variables';
+
+.categories {
+  padding: 3rem 0 0;
+}
+
+.heading_box_categories {
+  position: relative;
+  margin: 0 0 2rem;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: $head-color;
+  }
+  h2 {
+    margin: 0;
+    @include inline-block();
+    background: $white;
+    position: relative;
+    z-index: 2;
+    padding: 0 1.5rem;
+    font-weight: 600;
+    color: $head-color;
+  }
+}
+
+
+
+

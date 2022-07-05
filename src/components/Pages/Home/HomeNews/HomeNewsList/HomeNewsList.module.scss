@@ -1,0 +1,16 @@
+@import '../../../../../assets/scss/custom_variables';
+.news_section {
+  padding: 2rem 0 1rem;
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .row {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+.row_news {
+  flex-direction: row;
+  align-items: stretch;
+}

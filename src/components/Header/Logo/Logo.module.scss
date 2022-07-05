@@ -1,0 +1,18 @@
+@import '../../../assets/scss/custom_variables';
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  img {
+    max-width: 100%;
+  }
+  @include media-breakpoint-up(md) {
+    width: auto;
+    max-width: 150px;
+    margin: 10px 0 0;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
+}
+

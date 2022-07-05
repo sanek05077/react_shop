@@ -1,0 +1,46 @@
+@import '../../../assets/scss/custom_variables';
+.contacts_block {
+  padding: 10px 0 0;
+  span {
+    display: block;
+    font-size: rem-calc(10);
+  }
+  strong {
+    display: block;
+    font-size: rem-calc(14);
+    letter-spacing: 3px;
+  }
+  @include media-breakpoint-up(md) {
+    strong {
+      font-size: rem-calc(14);
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+    strong {
+      font-size: rem-calc(20);
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+.btn_secondary {
+  background: none;
+  color: $white;
+  border: 0;
+  padding: 0 10px 0  0;
+  position: relative;
+  &:active,
+  &:focus,
+  &:hover {
+    background: none !important;
+    box-shadow: none !important;
+  }
+  &:after {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+}
+

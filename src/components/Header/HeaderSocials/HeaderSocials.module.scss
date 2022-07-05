@@ -1,0 +1,22 @@
+@import '../../../assets/scss/custom_variables';
+.social_links {
+  margin: rem-calc(7) 0 0 -.75rem;
+  padding: 0;
+  list-style: none;
+  font-size: rem-calc(25);
+  position: relative;
+  text-align: right;
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 .75rem;
+  }
+  a {
+    color: $brand_color;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+

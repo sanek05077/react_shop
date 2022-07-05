@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import 'src/assets/scss/custom_variables';
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+* {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+.btn {
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
+}
+.btn-brand {
+  background-color: $brand_color !important;
+  padding: .4rem 1.5rem .6rem !important;
+  color: $white !important;
+  &:hover {
+    background-color: darken($brand_color, 15%) !important;
+
+  }
+}
+.btn-item {
+  background-color: $dark-success-color !important;
+  padding: .4rem 1rem .6rem !important;
+  color: $white !important;
+  text-transform: uppercase;
+  &:hover {
+    background-color: darken($dark-success-color, 15%) !important;
+
+  }
+}
+.light-section {
+  background: $dark-white;
+  padding: 2rem 0;
+}
+.text-section {
+  background: $white;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding: rem-calc(20);
+  margin: rem-calc(20 1 20);
+  font-size: rem-calc(14);
+  .head-box {
+    position: relative;
+    padding: 0 0 .5rem;
+    margin: 0 0 1rem;
+    &:before {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: $footer-color;
+      content: '';
+    }
+    &:after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 2px;
+      width: 150px;
+      background: $dark_secondary_color;
+      content: '';
+    }
+  }
+  h2 {
+    font-size: rem-calc(20);
+    font-weight: 600;
+  }
+  h3 {
+    font-size: rem-calc(18);
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+.main {
+  padding: 1rem 0;
+  h1 {
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+  &.contact-main {
+    background: #f5f5f4;
+  }
+}
+.light-section {
+  background: $white;
+  padding: 2rem 3rem;
+}
+.breadcrumb {
+  a {
+    color: $body-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

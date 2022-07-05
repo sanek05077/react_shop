@@ -1,0 +1,55 @@
+@import '../../../assets/scss/custom_variables';
+.main_nav {
+  font-size: rem-calc(14);
+}
+.nav_link {
+  padding: .75rem .5rem .875rem !important;
+  font-size: .75rem;
+  position: relative;
+  color: $white !important;
+  &:hover,
+  &:focus {
+    background: $brand_color;
+    &:before {
+      opacity: 0;
+      height: 0;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: #4b4b4b;
+  }
+  &:first-child {
+    &:before {
+      display: none;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    padding: .75rem 1rem .875rem !important;
+    font-size: .875rem;
+  }
+}
+.catalog_link {
+  font-size: rem-calc(12);
+  background: $brand_color;
+  position: relative;
+  padding: .75rem .5rem .875rem .5rem !important;
+  span {
+    @include inline-block();
+    margin: 0 rem-calc(5) 0 0;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: rem-calc(18) !important;
+    padding: .625rem 2rem .625rem 1rem !important;
+    span {
+      margin: 0 rem-calc(10) 0 0;
+    }
+  }
+}
+

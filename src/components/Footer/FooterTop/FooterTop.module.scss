@@ -1,0 +1,22 @@
+@import '../../../assets/scss/custom_variables';
+
+.footer_nav {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  li {
+    padding: 0 0 5px;
+  }
+  a {
+    color: $footer-color;
+    text-decoration: none;
+    &:hover {
+      color: $footer-color-hover;
+    }
+  }
+}
+.footer_icon {
+  @include inline-block();
+  margin: 5px rem-calc(10) 0 0;
+}

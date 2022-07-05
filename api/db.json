@@ -1,0 +1,302 @@
+{
+  "news": [
+    {
+      "image": "img-news-01.png",
+      "title": "10 ошибок при укладке теплого пола в ванной",
+      "id": "news_1",
+      "preview": "Ванная комната в квартире это небольшое помещение с повышенной влажностью, как правило, без отоплени",
+      "article": "Ванная комната в квартире это небольшое помещение с повышенной влажностью, как правило, без отоплениВанная комната в квартире это небольшое помещение с повышенной влажностью, как правило, без отоплени Ванная комната в квартире это небольшое помещение с повышенной влажностью, как правило, без отоплени Ванная комната в квартире это небольшое помещение с повышенной влажностью, как правило, без отоплени Ванная комната в квартире это небольшое помещение с повышенной влажностью, как правило, без отоплени"
+    },
+    {
+      "image": "img-news-02.png",
+      "title": "Как выбрать правильный теплый пол",
+      "id": "news_2",
+      "preview": "Ответ на вопрос, какой теплый пол лучше зависит от многих факторов. Необходимо учитывать площадь пом",
+      "article": "Ответ на вопрос, какой теплый пол лучше зависит от многих факторов. Необходимо учитывать площадь пом Ответ на вопрос, какой теплый пол лучше зависит от многих факторов. Необходимо учитывать площадь пом Ответ на вопрос, какой теплый пол лучше зависит от многих факторов. Необходимо учитывать площадь пом Ответ на вопрос, какой теплый пол лучше зависит от многих факторов. Необходимо учитывать площадь пом"
+    },
+    {
+      "image": "img-news-03.png",
+      "title": "Какой обогреватель выбрать",
+      "id": "news_3",
+      "preview": "Лучший инфракрасный обогреватель должен наполнить ваш дом качественным теплом, быть безопасным во вс",
+      "article": "Лучший инфракрасный обогреватель должен наполнить ваш дом качественным теплом, быть безопасным во вс Лучший инфракрасный обогреватель должен наполнить ваш дом качественным теплом, быть безопасным во вс Лучший инфракрасный обогреватель должен наполнить ваш дом качественным теплом, быть безопасным во вс Лучший инфракрасный обогреватель должен наполнить ваш дом качественным теплом, быть безопасным во вс"
+    },
+    {
+      "image": "img-news-04.png",
+      "title": "Экономное отопление вашего дома",
+      "id": "news_4",
+      "preview": "Современные технологии позволяют нам создать энергосберегающее отопление частного дома или квартиры",
+      "article": "Современные технологии позволяют нам создать энергосберегающее отопление частного дома или квартиры Современные технологии позволяют нам создать энергосберегающее отопление частного дома или квартиры Современные технологии позволяют нам создать энергосберегающее отопление частного дома или квартиры Современные технологии позволяют нам создать энергосберегающее отопление частного дома или квартиры"
+    }
+  ],
+  "categories": [
+    {
+      "id": "categoty_1",
+      "name": "Экономные обогреватели",
+      "image": "img-cat-01.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_2",
+      "name": "Электрический теплый пол",
+      "image": "img-cat-02.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_3",
+      "name": "Водяной теплый пол",
+      "image": "img-cat-03.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_4",
+      "name": "Кондиционеры",
+      "image": "img-cat-04.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_5",
+      "name": "Наружный обогрев",
+      "image": "img-cat-05.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_6",
+      "name": "Терморегуляторы",
+      "image": "img-cat-06.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_7",
+      "name": "Теплотехника",
+      "image": "img-cat-07.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_8",
+      "name": "Уничтожители насекомых",
+      "image": "img-cat-08.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    },
+    {
+      "id": "categoty_9",
+      "name": "Защита от протечек воды",
+      "image": "img-cat-09.png",
+      "category_products" : {
+        "product_1" : {
+          "name": "Product 1 name",
+          "price": "Product 1 price",
+          "description": "Product 1 description",
+          "image": "Product 1 image"
+        },
+        "product_2" : {
+          "name": "Product 2 name",
+          "price": "Product 2 price",
+          "description": "Product 2 description",
+          "image": "Product 2 image"
+        },
+        "product_3" : {
+          "name": "Product 3 name",
+          "price": "Product 3 price",
+          "description": "Product 3 description",
+          "image": "Product 3 image"
+        }
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "product_1",
+      "name": "Керамический конвектор с регулятором Ecoteplo 400 Вт (8 м2)",
+      "image": "img-product-01.png",
+      "category_id" : "categoty_1"
+    },
+    {
+      "id": "product_2",
+      "name": "Керамический конвектор с регулятором Ecoteplo 280/700 Вт (15 м2)",
+      "image": "img-product-02.png",
+      "category_id" : "categoty_1"
+    },
+    {
+      "id": "product_3",
+      "name": "Керамический конвектор с регулятором Ecoteplo 500/1000 Вт (20 м2)",
+      "image": "img-product-03.png",
+      "category_id" : "categoty_1"
+    },
+    {
+      "id": "product_4",
+      "name": "Инфракрасный теплый пол Sunfilm 305 (ширина 50 см, 110 Вт/мп)",
+      "image": "img-product-04.png",
+      "category_id" : "categoty_2"
+    },
+    {
+      "id": "product_5",
+      "name": "Инфракрасный теплый пол Sunfilm 308 (ширина 80 см, 175 Вт/мп)",
+      "image": "img-product-05.png",
+      "category_id" : "categoty_2"
+    },
+    {
+      "id": "product_6",
+      "name": "Инфракрасный теплый пол Sunfilm 310 (ширина 100 см, 220 Вт/мп)",
+      "image": "img-product-06.png",
+      "category_id" : "categoty_2"
+    }
+  ],
+  "info": [
+    {
+      "html": "<p>Установить электроотопление можно как в городской квартире, так и в частном доме. В нашем интернет-магазине представлены наиболее популярные и эффективные вида электроотопления.</p>"
+    }
+  ]
+}

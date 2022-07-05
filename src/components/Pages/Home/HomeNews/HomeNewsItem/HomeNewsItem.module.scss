@@ -1,0 +1,38 @@
+@import '../../../../../assets/scss/custom_variables';
+.news_block {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid $dark-success-color;
+  position: relative;
+  padding: rem-calc(10 10 60);
+  font-size: rem-calc(14);
+  h4 {
+    font-size: rem-calc(14);
+    color: $head-color;
+    font-weight: 700;
+    a {
+      color: $head-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.btn_item {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  font-size: rem-calc(12);
+}
+.image_news {
+  min-height: 150px;
+  margin: 0 0 rem-calc(10);
+  img {
+    width: 100%;
+  }
+}
+.col_news {
+  margin-bottom: rem-calc(10);
+}

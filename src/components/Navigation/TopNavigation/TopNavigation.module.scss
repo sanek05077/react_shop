@@ -1,0 +1,12 @@
+@import '../../../assets/scss/custom_variables';
+.top_navigation {
+  font-size: .75rem;
+  a {
+    color: $white;
+    padding: .5rem .875rem .5rem;
+    &:hover,
+    &:focus {
+      color: $brand_color;
+    }
+  }
+}

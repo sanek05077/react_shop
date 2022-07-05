@@ -1,0 +1,31 @@
+@import '../../../assets/scss/custom_variables';
+.sidebar {
+  padding: 2rem 0;
+}
+.sidebar_nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .875rem;
+  background: $white;
+  li {
+    border-bottom: 1px solid $dark-white;
+  }
+  a {
+    display: block;
+    padding: .625rem 2rem .7rem 1.25rem;
+    position: relative;
+    color: $body-color;
+    text-decoration: none;
+    &:hover {
+      background: $dark-white;
+    }
+  }
+  .b-icon.bi {
+    font-size: rem-calc(10);
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    margin-top: -5px;
+  }
+}

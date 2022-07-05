@@ -1,0 +1,32 @@
+.breadcrumbs {
+  margin: 10px 0 20px 0;
+  background: #f5f5f4;
+  font-size: .875rem;
+  color: #777;
+  padding: 8px 12px;
+}
+.item_breadcrumb {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 0 8px;
+  &:before {
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -2px;
+  }
+  &:first-child {
+    padding: 0 8px 0 0;
+    &:before {
+      content: '';
+    }
+  }
+  a {
+    color: #777;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

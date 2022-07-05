@@ -1,0 +1,13 @@
+@import '../../assets/scss/custom_variables';
+.footer {
+  background: $secondary_color;
+  padding: 2rem 0;
+  color: $footer-color;
+  font-size: rem-calc(14);
+  h5 {
+    color: $white;
+    font-size: rem-calc(14);
+    font-weight: 600;
+    margin: 0 0 rem-calc(15);
+  }
+}

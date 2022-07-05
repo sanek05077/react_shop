@@ -1,0 +1,21 @@
+@import '../../../assets/scss/custom_variables';
+.banner_bottom {
+  @include horizontalGradient($brand_color,$dark_brand_color);
+  padding: 1rem;
+  color: $head-color;
+  margin-top: 2rem;
+  text-align: center;
+  h4 {
+    color: $head-color;
+    font-size: rem-calc(18);
+  }
+  p {
+    margin: 0;
+  }
+  @include media-breakpoint-up(md) {
+    text-align: left;
+    padding: 2rem 1rem;
+  }
+}
+
+
